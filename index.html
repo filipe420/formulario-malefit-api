@@ -11,22 +11,25 @@
 <body>
     <div class="container">
         <form action="/submit" method="post" class="cadastro-form">
-            <div class="logo"><img src="LOGO3.jpg" alt=""></div>
+            <div class="logo"><img src="fotos-logo/LOGO3.jpg" alt=""></div>
             <label for="nomeCompleto">Nome Completo:</label>
             <input type="text" id="nomeCompleto" name="nomeCompleto" required>
 
             <label for="cpf">CPF:</label>
-            <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Ex: 123.456.789-00" required>
+            <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Ex: 123.456.789-00"
+                required>
 
             <label for="endereco">Endereço:</label>
             <input type="text" id="endereco" name="endereco" required>
 
             <label for="cep">CEP:</label>
             <!-- Adiciona oninput para formatação e onblur para busca de endereço -->
-            <input type="text" id="cep" name="cep" pattern="\d{5}-\d{3}" placeholder="Ex: 12345-678" required oninput="formatarCEP()" onblur="buscarEndereco()">
+            <input type="text" id="cep" name="cep" pattern="\d{5}-\d{3}" placeholder="Ex: 12345-678" required
+                oninput="formatarCEP()" onblur="buscarEndereco()">
 
             <label for="senha">Senha (8 dígitos com caracteres e números):</label>
-            <input type="password" id="senha" name="senha" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8}$" placeholder="Mín. 8 caracteres, 1 letra e 1 número" required>
+            <input type="password" id="senha" name="senha" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8}$"
+                placeholder="Mín. 8 caracteres, 1 letra e 1 número" required>
 
             <label for="bairro">Bairro:</label>
             <input type="text" id="bairro" name="bairro" required>
